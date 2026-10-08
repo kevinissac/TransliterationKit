@@ -9,7 +9,7 @@
   <a href="https://github.com/kevinissac/TransliterationKit/actions/workflows/test.yml"><img alt="Tests" src="https://github.com/kevinissac/TransliterationKit/actions/workflows/test.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/kevinissac/TransliterationKit"></a>
   <a href="https://jitpack.io/#kevinissac/TransliterationKit"><img alt="JitPack" src="https://jitpack.io/v/kevinissac/TransliterationKit.svg"></a>
-  <a href="https://www.npmjs.com/package/@kevinissac/transliteration-kit"><img alt="npm" src="https://img.shields.io/npm/v/@kevinissac/transliteration-kit"></a>
+  <a href="https://www.npmjs.com/package/transliterationkit"><img alt="npm" src="https://img.shields.io/npm/v/transliterationkit"></a>
   <img alt="Swift Package Manager" src="https://img.shields.io/badge/Swift_Package_Manager-compatible-F05138?logo=swift&logoColor=white">
   <img alt="Platforms" src="https://img.shields.io/badge/platforms-Android%20%7C%20iOS%20%7C%20Web-blue">
 </p>
@@ -34,7 +34,7 @@ dependencyResolutionManagement {
 
 // build.gradle.kts
 dependencies {
-    implementation("com.github.kevinissac:TransliterationKit:v1.0.0")
+    implementation("com.github.kevinissac:TransliterationKit:v1.0.1")
 }
 ```
 
@@ -45,7 +45,7 @@ In Xcode choose **File → Add Package Dependencies…** and enter
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/kevinissac/TransliterationKit", from: "1.0.0"),
+    .package(url: "https://github.com/kevinissac/TransliterationKit", from: "1.0.1"),
 ],
 targets: [
     .target(name: "YourApp", dependencies: [.product(name: "TransliterationKit", package: "TransliterationKit")]),
@@ -55,7 +55,7 @@ targets: [
 ### Web / Node
 
 ```
-npm install @kevinissac/transliteration-kit
+npm install transliterationkit
 ```
 
 ## Languages supported
@@ -93,7 +93,7 @@ Transliterator.supportedCodes        // ["ml", "ta"]
 JavaScript:
 
 ```js
-import { transliterate, supports, supportedCodes } from "@kevinissac/transliteration-kit";
+import { transliterate, supports, supportedCodes } from "transliterationkit";
 
 transliterate("ക്രിസ്തു", "ml");
 supports("ta");                      // true

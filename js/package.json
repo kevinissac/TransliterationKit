@@ -1,6 +1,6 @@
 {
-  "name": "@kevinissac/transliteration-kit",
-  "version": "1.0.0",
+  "name": "transliterationkit",
+  "version": "1.0.1",
   "description": "Phonetic transliteration of Brahmic scripts (Malayalam, Tamil, ...) into Latin letters.",
   "license": "MIT",
   "type": "module",
